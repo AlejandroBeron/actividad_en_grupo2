@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C2FD340-CB8A-4DF3-AD1F-C2BDBD694303}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>tp2_grupal</RootNamespace>
+    <AssemblyName>tp2-grupal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FAgregar_a.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAgregar_a.Designer.cs">
+      <DependentUpon>FAgregar_a.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAgregar_Categoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAgregar_Categoria.Designer.cs">
+      <DependentUpon>FAgregar_Categoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FArticulos.Designer.cs">
+      <DependentUpon>FArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fdetalles_a.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fdetalles_a.Designer.cs">
+      <DependentUpon>Fdetalles_a.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEliminar_a.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEliminar_a.Designer.cs">
+      <DependentUpon>FEliminar_a.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListar_a.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListar_a.Designer.cs">
+      <DependentUpon>FListar_a.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FModificar_a.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FModificar_a.Designer.cs">
+      <DependentUpon>FModificar_a.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_agregarmarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_agregarmarca.Designer.cs">
+      <DependentUpon>frm_agregarmarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_eliminarmarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_eliminarmarca.Designer.cs">
+      <DependentUpon>frm_eliminarmarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Imagen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Imagen.Designer.cs">
+      <DependentUpon>Frm_Imagen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm-marcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm-marcas.Designer.cs">
+      <DependentUpon>frm-marcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_categorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_categorias.Designer.cs">
+      <DependentUpon>Frm_categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_listarmarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_listarmarcas.Designer.cs">
+      <DependentUpon>frm_listarmarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_principal.Designer.cs">
+      <DependentUpon>Frm_principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_agregar_i.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_agregar_i.Designer.cs">
+      <DependentUpon>F_agregar_i.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_eliminar_i.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_eliminar_i.Designer.cs">
+      <DependentUpon>F_eliminar_i.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_listar_c.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_listar_c.Designer.cs">
+      <DependentUpon>F_listar_c.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_listar_i.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_listar_i.Designer.cs">
+      <DependentUpon>F_listar_i.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FAgregar_a.resx">
+      <DependentUpon>FAgregar_a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAgregar_Categoria.resx">
+      <DependentUpon>FAgregar_Categoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FArticulos.resx">
+      <DependentUpon>FArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fdetalles_a.resx">
+      <DependentUpon>Fdetalles_a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEliminar_a.resx">
+      <DependentUpon>FEliminar_a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListar_a.resx">
+      <DependentUpon>FListar_a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FModificar_a.resx">
+      <DependentUpon>FModificar_a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm-marcas.resx">
+      <DependentUpon>frm-marcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_agregarmarca.resx">
+      <DependentUpon>frm_agregarmarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_categorias.resx">
+      <DependentUpon>Frm_categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_eliminarmarca.resx">
+      <DependentUpon>frm_eliminarmarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Imagen.resx">
+      <DependentUpon>Frm_Imagen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_listarmarcas.resx">
+      <DependentUpon>frm_listarmarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_principal.resx">
+      <DependentUpon>Frm_principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_agregar_i.resx">
+      <DependentUpon>F_agregar_i.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_eliminar_i.resx">
+      <DependentUpon>F_eliminar_i.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_listar_c.resx">
+      <DependentUpon>F_listar_c.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_listar_i.resx">
+      <DependentUpon>F_listar_i.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dominio\dominio.csproj">
+      <Project>{5875d884-cfa3-44a1-9452-a0df74996239}</Project>
+      <Name>dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\negocio\negocio.csproj">
+      <Project>{80fcd920-d07d-44e0-9b8b-e5abfaadc338}</Project>
+      <Name>negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
