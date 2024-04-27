@@ -95,6 +95,12 @@
     <Compile Include="frm_agregarmarca.Designer.cs">
       <DependentUpon>frm_agregarmarca.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_agruparpormarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_agruparpormarca.Designer.cs">
+      <DependentUpon>frm_agruparpormarca.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_eliminarmarca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_agregarmarca.resx">
       <DependentUpon>frm_agregarmarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_agruparpormarca.resx">
+      <DependentUpon>frm_agruparpormarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_categorias.resx">
       <DependentUpon>Frm_categorias.cs</DependentUpon>

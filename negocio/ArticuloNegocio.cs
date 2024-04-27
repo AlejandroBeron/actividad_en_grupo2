@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using dominio;
 
+
 namespace negocio
 {
     public class ArticulosNegocio
@@ -74,10 +75,20 @@ namespace negocio
             Acceso_Datos datos = new Acceso_Datos();
             try
             {
-               datos.setearconsulta("insert into ARTICULOS values ('" + nuevo.codigo_a + "','" + nuevo.nombre_a + "','" + nuevo.descripcion_a+ "',@categoria, @marca , " + nuevo.precio_a + ")");
+
+                /// acceso.ejecutarScalar()
+                ///executescalar
+                ///int idArticulo = Convert.ToInt32(acceso.ejecutarScalar());
+              
+               datos.setearconsulta("insert into ARTICULOS values ('" + nuevo.codigo_a + "','" + nuevo.nombre_a + "','" + nuevo.descripcion_a+ "', @marca,@categoria , " + nuevo.precio_a + ")");
                datos.setearparametro("@categoria", nuevo.categoria_a.codigo_categoria);
                datos.setearparametro("@marca", nuevo.marca_a.Codigo);
-                
+               int id= datos.ejecutaraccion2();
+               datos.cerrarconexion();
+               datos.setearconsulta("insert into IMAGENES(IdArticulo, ImagenUrl) values(@Id,@url)");
+               datos.setearparametro("@Id", id);
+               datos.setearparametro("@url", nuevo.nombre_a);
+          
                 datos.ejecutaraccion();
             }
             catch (Exception ex)

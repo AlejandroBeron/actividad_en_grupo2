@@ -31,6 +31,7 @@
             this.b_agregar_m = new System.Windows.Forms.Button();
             this.b_listar_m = new System.Windows.Forms.Button();
             this.b_volve_m = new System.Windows.Forms.Button();
+            this.btn_filtrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // b_agregar_m
@@ -88,12 +89,32 @@
             this.b_volve_m.UseVisualStyleBackColor = false;
             this.b_volve_m.Click += new System.EventHandler(this.b_volve_m_Click);
             // 
+            // btn_filtrar
+            // 
+            this.btn_filtrar.AccessibleName = "b_agregar_m";
+            this.btn_filtrar.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_filtrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btn_filtrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_filtrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_filtrar.FlatAppearance.BorderSize = 5;
+            this.btn_filtrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btn_filtrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
+            this.btn_filtrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_filtrar.Location = new System.Drawing.Point(187, 155);
+            this.btn_filtrar.Name = "btn_filtrar";
+            this.btn_filtrar.Size = new System.Drawing.Size(207, 45);
+            this.btn_filtrar.TabIndex = 4;
+            this.btn_filtrar.Text = "agrupar por marca";
+            this.btn_filtrar.UseVisualStyleBackColor = false;
+            this.btn_filtrar.Click += new System.EventHandler(this.btn_filtrar_Click);
+            // 
             // Frm_marcas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(584, 212);
+            this.Controls.Add(this.btn_filtrar);
             this.Controls.Add(this.b_volve_m);
             this.Controls.Add(this.b_listar_m);
             this.Controls.Add(this.b_agregar_m);
@@ -106,6 +127,7 @@
             this.Name = "Frm_marcas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FMarcas";
+            this.Load += new System.EventHandler(this.Frm_marcas_Load);
             this.ResumeLayout(false);
 
         }
@@ -114,5 +136,6 @@
         private System.Windows.Forms.Button b_agregar_m;
         private System.Windows.Forms.Button b_listar_m;
         private System.Windows.Forms.Button b_volve_m;
+        private System.Windows.Forms.Button btn_filtrar;
     }
 }

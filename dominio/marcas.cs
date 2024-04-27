@@ -10,6 +10,7 @@ namespace dominio
     {
      public string Nombre {  get; set; }
      public int     Codigo { get; set; }
+     public Articulos Articulo_m {  get; set; }
 
         public override string ToString()
         {

@@ -33,7 +33,7 @@ namespace tp2_grupal
 imagen_negocio negocio = new imagen_negocio();
             imagens = negocio.Listar();
             dgv_listar.DataSource = imagens;
-            pbx_imagen.Load(imagens[0].Nombre_imagen);
+            pbx_imagen.Load(imagens[1].Nombre_imagen);
         }
  private void dgv_listar_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
