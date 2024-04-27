@@ -41,9 +41,9 @@ namespace tp2_grupal
             this.l_codelim_a.AutoSize = true;
             this.l_codelim_a.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_codelim_a.ForeColor = System.Drawing.Color.White;
-            this.l_codelim_a.Location = new System.Drawing.Point(126, 46);
+            this.l_codelim_a.Location = new System.Drawing.Point(32, 56);
             this.l_codelim_a.Name = "l_codelim_a";
-            this.l_codelim_a.Size = new System.Drawing.Size(322, 19);
+            this.l_codelim_a.Size = new System.Drawing.Size(576, 33);
             this.l_codelim_a.TabIndex = 0;
             this.l_codelim_a.Text = "seleccione el articulo que desea eliminar:";
             // 
@@ -57,7 +57,7 @@ namespace tp2_grupal
             this.b_eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_eliminar.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_eliminar.Location = new System.Drawing.Point(90, 314);
+            this.b_eliminar.Location = new System.Drawing.Point(126, 393);
             this.b_eliminar.MaximumSize = new System.Drawing.Size(150, 44);
             this.b_eliminar.MinimumSize = new System.Drawing.Size(150, 44);
             this.b_eliminar.Name = "b_eliminar";
@@ -77,7 +77,7 @@ namespace tp2_grupal
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(345, 314);
+            this.button2.Location = new System.Drawing.Point(382, 393);
             this.button2.MaximumSize = new System.Drawing.Size(150, 44);
             this.button2.MinimumSize = new System.Drawing.Size(150, 44);
             this.button2.Name = "button2";
@@ -90,17 +90,18 @@ namespace tp2_grupal
             // dgv_eliminara
             // 
             this.dgv_eliminara.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_eliminara.Location = new System.Drawing.Point(30, 89);
+            this.dgv_eliminara.Location = new System.Drawing.Point(67, 112);
             this.dgv_eliminara.Name = "dgv_eliminara";
-            this.dgv_eliminara.Size = new System.Drawing.Size(530, 201);
+            this.dgv_eliminara.RowHeadersWidth = 72;
+            this.dgv_eliminara.Size = new System.Drawing.Size(513, 201);
             this.dgv_eliminara.TabIndex = 4;
             // 
             // FEliminar_a
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.ClientSize = new System.Drawing.Size(676, 536);
             this.Controls.Add(this.dgv_eliminara);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.b_eliminar);
@@ -109,8 +110,8 @@ namespace tp2_grupal
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(600, 500);
-            this.MinimumSize = new System.Drawing.Size(600, 500);
+            this.MaximumSize = new System.Drawing.Size(700, 600);
+            this.MinimumSize = new System.Drawing.Size(700, 600);
             this.Name = "FEliminar_a";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eliminar Articulos";

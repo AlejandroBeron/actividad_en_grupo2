@@ -112,5 +112,10 @@ namespace tp2_grupal
             }
          
         }
+
+        private void cb_marcas_a_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

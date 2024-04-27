@@ -15,7 +15,8 @@ namespace tp2_grupal
 {
     public partial class frm_agruparpormarca : Form
     {
-        private List<Marca> lista_agrupada;
+        private List<Articulos> lista_articulos;
+
         public frm_agruparpormarca()
         {
             InitializeComponent();
@@ -28,12 +29,15 @@ namespace tp2_grupal
 
         private void frm_agruparpormarca_Load(object sender, EventArgs e)
         {
-            marca_negocio negocio = new marca_negocio();
-            lista_agrupada = negocio.listar();
+            marca_negocio marcanegocio = new marca_negocio();
 
             try
             {
-                dgv_agruparmarca.DataSource = lista_agrupada;
+
+                cb_marcas.DataSource = marcanegocio.Listar();
+                cb_marcas.ValueMember = "Codigo";
+                cb_marcas.DisplayMember = "Nombre";
+
             }
             catch (Exception ex)
             {
@@ -41,6 +45,30 @@ namespace tp2_grupal
                 throw ex;
             }
         }
-       
+    
+
+        private void b_lmarca_Click(object sender, EventArgs e)
+        {
+            Articulos articulos = new Articulos();
+            ArticulosNegocio negocio = new ArticulosNegocio();
+            //articulos.marca_a = (Marca)cb_marcas.SelectedItem;
+            lista_articulos =negocio.listar((Marca)cb_marcas.SelectedItem);
+            try
+            {
+                dgv_agruparmarca.DataSource = lista_articulos;
+                dgv_agruparmarca.Columns["Id_a"].Visible = false;
+
+                //dgv_agruparmarca.Columns["Categoria"].Visible = false;    
+              
+
+               
+            }
+            catch (Exception ex)
+            {
+                // MessageBox.Show(ex.ToString());ç
+                throw ex;
+            }
+
+        }
     }
 }

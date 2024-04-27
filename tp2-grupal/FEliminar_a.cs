@@ -46,6 +46,9 @@ namespace tp2_grupal
         private void FEliminar_a_Load(object sender, EventArgs e)
         {
             cargar();
+                    dgv_eliminara.Columns["precio_a"].Visible = false;
+                    dgv_eliminara.Columns["imagen_a"].Visible = false;
+                    dgv_eliminara.Columns["descripcion_a"].Visible = false;
         }
 
         private void b_eliminar_Click(object sender, EventArgs e)

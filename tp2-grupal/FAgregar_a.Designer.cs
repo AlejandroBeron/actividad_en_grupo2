@@ -168,6 +168,7 @@ namespace tp2_grupal
             this.cb_marcas_a.Name = "cb_marcas_a";
             this.cb_marcas_a.Size = new System.Drawing.Size(222, 38);
             this.cb_marcas_a.TabIndex = 2;
+            this.cb_marcas_a.SelectedIndexChanged += new System.EventHandler(this.cb_marcas_a_SelectedIndexChanged);
             // 
             // cb_categorias_a
             // 

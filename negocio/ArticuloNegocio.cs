@@ -102,6 +102,51 @@ namespace negocio
             }
 
         }
+        public List<Articulos> listar(Marca id)
+        {
+            List<Articulos> lista = new List<Articulos>();
+            Acceso_Datos datos = new Acceso_Datos();
+            try
+            {
+                datos.setearconsulta("select Codigo, Nombre, Precio, A.Id, A.Descripcion, M.Descripcion Marca, A.IdMarca idMarca, C.Descripcion Categoria, A.IdCategoria IdCategoria from ARTICULOS A, MARCAS M, CATEGORIAS C where A.IdMarca = @Id AND C.Id = A.IdCategoria AND m.Id = @Id");
+                datos.setearparametro("@Id", id.Codigo);
+                datos.ejecutarlectura();
+                while (datos.lector.Read())
+                {
+                    Articulos aux = new Articulos();
+                    aux.nombre_a = (string)datos.lector["Nombre"];
+                    aux.precio_a = (decimal)datos.lector["Precio"];
+                    aux.codigo_a = (string)datos.lector["Codigo"];
+                    aux.descripcion_a = (string)datos.lector["Descripcion"];
+                    aux.Id_a = (int)datos.lector["Id"];
+                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Categoria"))))
+                    {
+                        aux.categoria_a = new Categoria();
+                        aux.categoria_a.nombre_categoria = (string)datos.lector["Categoria"];
+                        aux.categoria_a.codigo_categoria = (int)datos.lector["IdCategoria"];
+
+                    }
+                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("Marca"))))
+                    {
+                        aux.marca_a = new Marca();
+                        aux.marca_a.Nombre = (string)datos.lector["Marca"];
+                        aux.marca_a.Codigo = (int)datos.lector["IdMarca"];
+                    }
+                    lista.Add(aux);
+
+                }
+                return lista;
+                
+             }
+            catch (Exception ex)
+            {
+
+                throw ex;
+
+            }
+            finally { datos.cerrarconexion(); }
+        }
+
         public void modificar (Articulos articulo)
         {
             Acceso_Datos datos = new Acceso_Datos();

@@ -50,40 +50,7 @@ namespace tp2_grupal
         }
 
 
-       public List<Marca> listar()
-        {
-            List<Marca> lista_agrupada = new List<Marca>();
-            Acceso_Datos datos = new Acceso_Datos();
-            try
-            {
-
-                datos.setearconsulta("Select M.Id,M.Descripcion,a.Nombre,a.Descripcion,a.Precio From MARCAS AS m left join ARTICULOS AS a On m.Id=a.IdMarca and m.Id = 1  \r\n");
-                datos.ejecutarlectura();
-                while (datos.lector.Read())
-                {
-                    Marca aux = new Marca();
-                    aux.Codigo=(int)datos.lector["Id"];
-                    aux.Nombre = (string)datos.lector["descripcion"];
-
-                    if (!(datos.lector.IsDBNull(datos.lector.GetOrdinal("ARTICULOS")))) 
-                    { 
-                    aux.Articulo_m.nombre_a = (string)datos.lector["a.Nombre"];
-                    aux.Articulo_m.descripcion_a = (string)datos.lector["Descripcion"];
-                    aux.Articulo_m.precio_a = (decimal)datos.lector["Precio"];
-                    }
-                    lista_agrupada.Add(aux);
-
-                }
-                return lista_agrupada;
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-                
-            }
-            finally { datos.cerrarconexion(); }
-        }
+       
 
         public List<Marca> Listar()
         {
