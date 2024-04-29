@@ -22,10 +22,10 @@ namespace tp2_grupal
         { 
             foreach(var item in Application.OpenForms)
             {
-                if(item.GetType() == typeof(FArticulos))
+                if(item.GetType() == typeof(FArticulos1))
                     return;
             }
-            FArticulos FArt = new FArticulos();
+            FArticulos1 FArt = new FArticulos1();
             FArt.Show();
         }
 
@@ -73,6 +73,30 @@ namespace tp2_grupal
         private void Frm_principal_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_listados_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(F_Listar_M))
+                    return;
+            }
+            frm_agruparpormarca flistar = new frm_agruparpormarca();
+            flistar.Show();
+        }
+
+        private void btn_Busqueda_Click(object sender, EventArgs e)
+        {
+            foreach (var item in Application.OpenForms)
+            {
+                if (item.GetType() == typeof(frmbusqueda))
+                    return;
+            }
+            frmbusqueda fbusqueda = new frmbusqueda();
+            fbusqueda.Show();
+
+            
         }
     }
 }

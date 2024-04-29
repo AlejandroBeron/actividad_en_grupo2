@@ -10,23 +10,13 @@ using System.Windows.Forms;
 
 namespace tp2_grupal
 {
-    public partial class FArticulos : Form
+    public partial class FArticulos1 : Form
     {
-        public FArticulos()
+        public FArticulos1()
         {
             InitializeComponent();
         }
 
-        private void b_Detalles_Click(object sender, EventArgs e)
-        {
-            foreach (var item in Application.OpenForms)
-            {
-                if (item.GetType() == typeof(Fdetalles_a))
-                    return;
-            }
-            Fdetalles_a Fdeta = new Fdetalles_a();
-            Fdeta.Show();
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -76,6 +66,11 @@ namespace tp2_grupal
             }
             FListar_a Flisa = new FListar_a();
             Flisa.Show();
+        }
+
+        private void FArticulos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

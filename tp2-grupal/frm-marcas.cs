@@ -64,13 +64,7 @@ namespace tp2_grupal
 
         private void btn_filtrar_Click(object sender, EventArgs e)
         {
-            foreach (var item in Application.OpenForms)
-            {
-                if (item.GetType() == typeof(F_Listar_M))
-                    return;
-            }
-            frm_agruparpormarca flistar = new frm_agruparpormarca();
-            flistar.Show();
+            
         }
 
         private void Frm_marcas_Load(object sender, EventArgs e)

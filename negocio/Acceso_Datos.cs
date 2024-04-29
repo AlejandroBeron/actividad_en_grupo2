@@ -52,6 +52,7 @@ namespace negocio
 
                 throw ex;
             }
+            
         }
 
         public void ejecutaraccion()
@@ -68,25 +69,15 @@ namespace negocio
                 throw ex;
             }
         }
-        public int ejecutaraccion2()
-        { 
-            comando.Connection = conexion;
-            try
-            { 
-                conexion.Open();
-                comando.ExecuteNonQuery();
-                int count=0;//= (int)comando.ExecuteScalar();
-                   
-              return count;
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
+        public object ejecutarScalar()
+        {
+            
+            object res = comando.ExecuteScalar();
+            conexion.Close();
+            return res;
         }
-       
         
+     
 
         public void cerrarconexion()
         {

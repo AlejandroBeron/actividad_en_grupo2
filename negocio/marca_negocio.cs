@@ -68,13 +68,13 @@ namespace tp2_grupal
                 conexion.Open();
                 lector = comando.ExecuteReader();
 
-                while (lector.Read())
+             while (lector.Read())
                 {
-                    Marca aux = new Marca();
-                    aux.Codigo = lector.GetInt32(0);
-                    aux.Nombre = (string)lector["Descripcion"];
+                Marca aux = new Marca();
+                aux.Codigo = lector.GetInt32(0);
+                aux.Nombre = (string)lector["Descripcion"];
 
-                    Lista_marca.Add(aux);
+                 Lista_marca.Add(aux);
                 }
                 conexion.Close();
                 return Lista_marca;

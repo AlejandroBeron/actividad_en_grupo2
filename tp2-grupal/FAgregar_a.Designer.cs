@@ -43,6 +43,10 @@ namespace tp2_grupal
             this.tb_precioa = new System.Windows.Forms.TextBox();
             this.tb_codigoa = new System.Windows.Forms.TextBox();
             this.l_codigoa = new System.Windows.Forms.Label();
+            this.l_url = new System.Windows.Forms.Label();
+            this.tb_urlimagen = new System.Windows.Forms.TextBox();
+            this.pb_agregar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_agregar)).BeginInit();
             this.SuspendLayout();
             // 
             // l_nom_art
@@ -100,7 +104,7 @@ namespace tp2_grupal
             this.ldetalle_a.AutoSize = true;
             this.ldetalle_a.Font = new System.Drawing.Font("Arial", 11.14286F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ldetalle_a.ForeColor = System.Drawing.SystemColors.Control;
-            this.ldetalle_a.Location = new System.Drawing.Point(50, 247);
+            this.ldetalle_a.Location = new System.Drawing.Point(66, 338);
             this.ldetalle_a.MaximumSize = new System.Drawing.Size(132, 33);
             this.ldetalle_a.MinimumSize = new System.Drawing.Size(132, 33);
             this.ldetalle_a.Name = "ldetalle_a";
@@ -113,7 +117,7 @@ namespace tp2_grupal
             this.r_detalle_a.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.r_detalle_a.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.r_detalle_a.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.r_detalle_a.Location = new System.Drawing.Point(161, 245);
+            this.r_detalle_a.Location = new System.Drawing.Point(220, 336);
             this.r_detalle_a.MaximumSize = new System.Drawing.Size(288, 156);
             this.r_detalle_a.MinimumSize = new System.Drawing.Size(288, 156);
             this.r_detalle_a.Name = "r_detalle_a";
@@ -131,7 +135,7 @@ namespace tp2_grupal
             this.A_agregar_A.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.A_agregar_A.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A_agregar_A.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A_agregar_A.Location = new System.Drawing.Point(176, 407);
+            this.A_agregar_A.Location = new System.Drawing.Point(226, 513);
             this.A_agregar_A.Name = "A_agregar_A";
             this.A_agregar_A.Size = new System.Drawing.Size(94, 37);
             this.A_agregar_A.TabIndex = 6;
@@ -149,7 +153,7 @@ namespace tp2_grupal
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(308, 407);
+            this.button2.Location = new System.Drawing.Point(448, 513);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(94, 37);
             this.button2.TabIndex = 7;
@@ -221,12 +225,45 @@ namespace tp2_grupal
             this.l_codigoa.TabIndex = 13;
             this.l_codigoa.Text = "Codigo del Articulo:";
             // 
+            // l_url
+            // 
+            this.l_url.AutoSize = true;
+            this.l_url.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_url.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.l_url.Location = new System.Drawing.Point(46, 259);
+            this.l_url.Name = "l_url";
+            this.l_url.Size = new System.Drawing.Size(188, 32);
+            this.l_url.TabIndex = 14;
+            this.l_url.Text = "URL imagen:";
+            // 
+            // tb_urlimagen
+            // 
+            this.tb_urlimagen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.tb_urlimagen.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_urlimagen.Location = new System.Drawing.Point(227, 259);
+            this.tb_urlimagen.Name = "tb_urlimagen";
+            this.tb_urlimagen.Size = new System.Drawing.Size(281, 37);
+            this.tb_urlimagen.TabIndex = 15;
+            this.tb_urlimagen.Leave += new System.EventHandler(this.tb_urlimagen_Leave);
+            // 
+            // pb_agregar
+            // 
+            this.pb_agregar.Location = new System.Drawing.Point(497, 24);
+            this.pb_agregar.Name = "pb_agregar";
+            this.pb_agregar.Size = new System.Drawing.Size(239, 215);
+            this.pb_agregar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_agregar.TabIndex = 16;
+            this.pb_agregar.TabStop = false;
+            // 
             // FAgregar_a
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 40F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(576, 436);
+            this.ClientSize = new System.Drawing.Size(776, 636);
+            this.Controls.Add(this.pb_agregar);
+            this.Controls.Add(this.tb_urlimagen);
+            this.Controls.Add(this.l_url);
             this.Controls.Add(this.l_codigoa);
             this.Controls.Add(this.tb_codigoa);
             this.Controls.Add(this.tb_precioa);
@@ -245,12 +282,13 @@ namespace tp2_grupal
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(600, 500);
-            this.MinimumSize = new System.Drawing.Size(600, 500);
+            this.MaximumSize = new System.Drawing.Size(800, 700);
+            this.MinimumSize = new System.Drawing.Size(800, 700);
             this.Name = "FAgregar_a";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Articulo";
             this.Load += new System.EventHandler(this.FAgregar_a_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_agregar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,5 +309,8 @@ namespace tp2_grupal
         private System.Windows.Forms.TextBox tb_precioa;
         private System.Windows.Forms.TextBox tb_codigoa;
         private System.Windows.Forms.Label l_codigoa;
+        private System.Windows.Forms.Label l_url;
+        private System.Windows.Forms.TextBox tb_urlimagen;
+        private System.Windows.Forms.PictureBox pb_agregar;
     }
 }

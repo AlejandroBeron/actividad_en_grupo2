@@ -123,6 +123,7 @@
             this.Name = "F_Agregar_M";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar Marca";
+            this.Load += new System.EventHandler(this.F_Agregar_M_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

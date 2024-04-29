@@ -42,10 +42,11 @@ namespace tp2_grupal
 
             try
             {
-                if (categorias == null)
+                if (categorias == null) 
                     categorias = new Categoria();
                 categorias.nombre_categoria = tb_nom_cat.Text;
-               
+                if (categorias.nombre_categoria != "") { 
+              
                 if (categorias.codigo_categoria != 0)
                 {
                     categoriaN.modificar(categorias);
@@ -59,7 +60,8 @@ namespace tp2_grupal
                     MessageBox.Show("AGREGADO CON EXITO");
                     Close();
 
-                }
+                }}
+                else { MessageBox.Show("ingrese un nombre antes de agregar"); }
 
             }
             catch (Exception ex)

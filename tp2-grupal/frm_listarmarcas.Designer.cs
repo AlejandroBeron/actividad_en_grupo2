@@ -40,7 +40,8 @@
             this.l_listarmarca.AutoSize = true;
             this.l_listarmarca.Font = new System.Drawing.Font("Arial", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_listarmarca.ForeColor = System.Drawing.Color.White;
-            this.l_listarmarca.Location = new System.Drawing.Point(202, 9);
+            this.l_listarmarca.Location = new System.Drawing.Point(194, 28);
+            this.l_listarmarca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.l_listarmarca.Name = "l_listarmarca";
             this.l_listarmarca.Size = new System.Drawing.Size(83, 24);
             this.l_listarmarca.TabIndex = 1;
@@ -58,9 +59,10 @@
             this.btn_salir_listarmarcas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btn_salir_listarmarcas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_salir_listarmarcas.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_salir_listarmarcas.Location = new System.Drawing.Point(122, 201);
+            this.btn_salir_listarmarcas.Location = new System.Drawing.Point(77, 278);
+            this.btn_salir_listarmarcas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_salir_listarmarcas.Name = "btn_salir_listarmarcas";
-            this.btn_salir_listarmarcas.Size = new System.Drawing.Size(104, 46);
+            this.btn_salir_listarmarcas.Size = new System.Drawing.Size(126, 43);
             this.btn_salir_listarmarcas.TabIndex = 2;
             this.btn_salir_listarmarcas.Text = "Salir";
             this.btn_salir_listarmarcas.UseVisualStyleBackColor = false;
@@ -68,10 +70,16 @@
             // 
             // dgv_marcas
             // 
+            this.dgv_marcas.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.dgv_marcas.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgv_marcas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_marcas.Location = new System.Drawing.Point(122, 60);
+            this.dgv_marcas.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgv_marcas.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.dgv_marcas.Location = new System.Drawing.Point(83, 80);
+            this.dgv_marcas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgv_marcas.Name = "dgv_marcas";
-            this.dgv_marcas.Size = new System.Drawing.Size(244, 135);
+            this.dgv_marcas.RowHeadersWidth = 72;
+            this.dgv_marcas.Size = new System.Drawing.Size(318, 160);
             this.dgv_marcas.TabIndex = 3;
             this.dgv_marcas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_marcas_CellContentClick);
             // 
@@ -85,9 +93,10 @@
             this.btn_eliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_eliminar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_eliminar.Location = new System.Drawing.Point(262, 201);
+            this.btn_eliminar.Location = new System.Drawing.Point(275, 278);
+            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(104, 46);
+            this.btn_eliminar.Size = new System.Drawing.Size(126, 43);
             this.btn_eliminar.TabIndex = 4;
             this.btn_eliminar.Text = "Eliminar";
             this.btn_eliminar.UseVisualStyleBackColor = false;
@@ -95,18 +104,20 @@
             // 
             // F_Listar_M
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(471, 284);
+            this.ClientSize = new System.Drawing.Size(484, 361);
             this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.dgv_marcas);
             this.Controls.Add(this.btn_salir_listarmarcas);
             this.Controls.Add(this.l_listarmarca);
+            this.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(487, 323);
-            this.MinimumSize = new System.Drawing.Size(487, 323);
+            this.MaximumSize = new System.Drawing.Size(500, 400);
+            this.MinimumSize = new System.Drawing.Size(500, 400);
             this.Name = "F_Listar_M";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listar Marcas";

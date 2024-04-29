@@ -65,12 +65,6 @@
     <Compile Include="FArticulos.Designer.cs">
       <DependentUpon>FArticulos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fdetalles_a.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Fdetalles_a.Designer.cs">
-      <DependentUpon>Fdetalles_a.cs</DependentUpon>
-    </Compile>
     <Compile Include="FEliminar_a.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +82,17 @@
     </Compile>
     <Compile Include="FModificar_a.Designer.cs">
       <DependentUpon>FModificar_a.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Form1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="frmbusqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbusqueda.Designer.cs">
+      <DependentUpon>frmbusqueda.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_agregarmarca.cs">
       <SubType>Form</SubType>
@@ -172,9 +177,6 @@
     <EmbeddedResource Include="FArticulos.resx">
       <DependentUpon>FArticulos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Fdetalles_a.resx">
-      <DependentUpon>Fdetalles_a.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FEliminar_a.resx">
       <DependentUpon>FEliminar_a.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,8 +186,15 @@
     <EmbeddedResource Include="FModificar_a.resx">
       <DependentUpon>FModificar_a.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Form1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm-marcas.resx">
       <DependentUpon>frm-marcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbusqueda.resx">
+      <DependentUpon>frmbusqueda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_agregarmarca.resx">
       <DependentUpon>frm_agregarmarca.cs</DependentUpon>

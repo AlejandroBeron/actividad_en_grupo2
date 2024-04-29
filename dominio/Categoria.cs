@@ -20,10 +20,6 @@ namespace dominio
             return nombre_categoria;
         }
 
-        public void EliminarCategorias()
-        {
-
-        }
-
+     
     }
 }

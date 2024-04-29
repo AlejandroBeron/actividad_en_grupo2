@@ -18,7 +18,7 @@ namespace negocio
             try
             {
       
-                datos.setearconsulta("select Id, DESCRIPCION from CATEGORIAS");
+                datos.setearconsulta("select Id, Descripcion from CATEGORIAS");
                 datos.ejecutarlectura();
                 while (datos.lector.Read())
                 {
@@ -49,13 +49,13 @@ namespace negocio
       Acceso_Datos datos = new Acceso_Datos();
       try
       {
-        datos.setearconsulta("insert into CATEGORIAS values('"+ nueva_Categoria.nombre_categoria + "')");
+             datos.setearconsulta("insert into CATEGORIAS values('"+ nueva_Categoria.nombre_categoria + "')");
         
-        datos.ejecutaraccion();
+             datos.ejecutaraccion();
      }
        catch (Exception ex)
       {
-        throw ex;
+              throw ex;
    
        }
       finally
@@ -83,6 +83,7 @@ namespace negocio
                 throw ex;
             }
         }
+        
         public void Eliminar (int Id)
         {
                 Acceso_Datos datos = new Acceso_Datos();

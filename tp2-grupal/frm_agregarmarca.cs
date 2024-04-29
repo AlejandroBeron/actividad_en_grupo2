@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -23,17 +24,24 @@ namespace tp2_grupal
             Marca nueva_marca = new Marca();
             marca_negocio negocio = new marca_negocio();
             try
-            {
+            { 
+                
                 nueva_marca.Nombre = txt_agregarmarca.Text;
-                negocio.Agregar(nueva_marca);
+                
+                if (nueva_marca.Nombre!="")
+                {
+                    negocio.Agregar(nueva_marca);
                 MessageBox.Show("agregado exitosamente");
-                Close();
+                Close();}
+                else
+                {
+                    MessageBox.Show("ingrese un nombre antes de agregar");
+                }
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                
             }
         }
 
@@ -43,6 +51,11 @@ namespace tp2_grupal
         }
 
         private void txt_agregarmarca_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void F_Agregar_M_Load(object sender, EventArgs e)
         {
 
         }

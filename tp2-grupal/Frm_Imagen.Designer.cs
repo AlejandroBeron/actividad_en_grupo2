@@ -44,7 +44,7 @@ namespace tp2_grupal
             this.b_agregar_im.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.b_agregar_im.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_agregar_im.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_agregar_im.Location = new System.Drawing.Point(29, 77);
+            this.b_agregar_im.Location = new System.Drawing.Point(167, 37);
             this.b_agregar_im.Margin = new System.Windows.Forms.Padding(10);
             this.b_agregar_im.Name = "b_agregar_im";
             this.b_agregar_im.Size = new System.Drawing.Size(122, 45);
@@ -63,12 +63,12 @@ namespace tp2_grupal
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(239, 77);
+            this.button2.Location = new System.Drawing.Point(309, 37);
             this.button2.Margin = new System.Windows.Forms.Padding(10);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(122, 45);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Listar";
+            this.button2.Text = "List/Elim";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -82,7 +82,7 @@ namespace tp2_grupal
             this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(175)))), ((int)(((byte)(58)))));
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(443, 77);
+            this.button4.Location = new System.Drawing.Point(19, 37);
             this.button4.Margin = new System.Windows.Forms.Padding(10);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(122, 45);
@@ -96,7 +96,7 @@ namespace tp2_grupal
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(584, 205);
+            this.ClientSize = new System.Drawing.Size(464, 114);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.b_agregar_im);
@@ -104,11 +104,11 @@ namespace tp2_grupal
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(10);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(600, 244);
-            this.MinimumSize = new System.Drawing.Size(600, 244);
+            this.MaximumSize = new System.Drawing.Size(480, 153);
+            this.MinimumSize = new System.Drawing.Size(480, 153);
             this.Name = "Frm_Imagen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Frm_Imagen";
+            this.Text = "Menu Imagen";
             this.ResumeLayout(false);
 
         }
